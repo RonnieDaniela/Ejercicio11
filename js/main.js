@@ -1,5 +1,5 @@
 js>
-let hojaEstilo = 0
+let ;hojaEstilo=0;
 
 function cambiarCss() {
     if (hojaEstilo == 0) {
@@ -11,7 +11,7 @@ function cambiarCss() {
         hojaEstilo = 2;
     }
     else if (hojaEstilo == 2) {
-        document.getElementById('css').href = 'cssprueba/style.css';
+        document.getElementById('css').href = 'css/estilo.css';
         hojaEstilo = 0;
     }
 }
