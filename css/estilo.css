@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap%27');
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;    
+}
+:root {
+    --colorFondoWeb: #17181b;
+    --colorRotulos: #45625b;
+    --colorTituloPrincipal: #e2e5e9;
+    --colorBordeTitulo: #3d5b50;
+    --colorFormFocus: #74a197;
+    --colorFondoForm:#b3c9c3;
+    --colorFormSelected:#9ebab2;
+    --colorBotones: #212e29;
+    --colorBordeBoton:#3d5b50;
+    --colorBordeText: #768982;
+}
+body{
+    background-color: var(--colorFondoWeb);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: var(--colorTituloPrincipal); 
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 3em;
+}
+.pretitle {
+    border-bottom: 15px solid var(--colorBordeTitulo);
+    clip-path: polygon(0 0, 100% 0, 99% 100%, 1% 100%);
+}
+.posttitle {
+    border-top: 15px solid var(--colorBordeTitulo);
+    clip-path: polygon(1% 0, 99% 0, 100% 100%, 0 100%);
+}
+article{
+    font-family: 'Roboto', sans-serif;  
+}
+fieldset{
+    background-color: var(--colorFondoForm);
+    padding: 20px;
+    margin-top: 10px;
+}
+legend{
+    color: var(--colorTituloPrincipal);
+    text-align: left;
+    background-color: var(--colorRotulos);
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+p{
+    padding: 5px;
+}
+label{
+    padding: 5px;
+}
+.input-largo {
+    width: 70%;
+    height: 30px;
+    border: 1px solid var(--colorBordeText);
+    border-radius: 5px;
+}
+input:focus {
+    background-color: var(--colorBordeTitulo);
+    color: var(--colorTituloPrincipal);
+}
+textarea:focus {
+    background-color: var(--colorBordeTitulo);
+}
+fieldset:focus{
+    background-color: var(--colorFormFocus);
+}
+.input-largo-area {
+    height: 100px;
+}
+#datos{
+    text-align: center;
+}
+#contacto{
+    text-align: center;
+}
+form input::placeholder{
+    text-align:right;
+}
+footer{
+    font-family: 'Roboto', sans-serif;  
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color:var(--colorTituloPrincipal)
+}
+#accion{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+button{
+    background-color: var(--colorBotones);
+    padding: 25px;
+    margin: 25px;
+    font-size: 20px;
+    color: var(--colorTituloPrincipal);
+    border: 2px solid var(--colorBordeBoton);
+    border-radius: 5px;   
+    justify-content: center;
+}
