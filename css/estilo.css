@@ -74,6 +74,7 @@ input:focus {
 }
 textarea:focus {
     background-color: var(--colorBordeTitulo);
+    color: var(--colorTituloPrincipal);
 }
 fieldset:focus{
     background-color: var(--colorFormFocus);
