@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link id="estilo" rel="stylesheet" href="css/estilo.css">
+    <!-- <link id="futuro" rel="stylesheet" href="css/estilos-futuro.css"> -->
     <title>Afiliacion</title>
 </head>
 <body>
@@ -29,7 +30,7 @@
                             
                             <p>
                                 <p><label for="dni">Documento:* </label></p>
-                                <input class="input-largo" type="text" id="dni" name="dni" pattern="[0-9]{6-8}" minlength="7"  maxlength="9" required>
+                                <input class="input-largo" type="text" id="dni" name="dni" pattern="[0-9]{7,9}" title="Ingresar solo numeros, entre 7 y 9 digitos en total" minlength="7"  maxlength="9" required>
                             </p>
                             
                             <p>
@@ -258,11 +259,11 @@
                             
                         <p>
                             <p><label for="telefono">Telefono:</label></p>
-                            <input class="input-largo" type="tel" id="telefono" name="telefono" placeholder="Código de area y número" minlength="8" maxlength="12">
+                            <input class="input-largo" type="tel" id="telefono" name="telefono" placeholder="Código de area y número" pattern="[0-9]{8,15}" minlength="8" maxlength="15" title="Utilizar solo numeros, entre 8 y 15 digitos en total">
                         </p>
                         <p>            
                             <p><label for="mail">Direccion de correo electronico:*</label></p>
-                            <input class="input-largo" type="email" id="mail" name="mail" placeholder="Ej: mail@gmail.com" required>
+                            <input class="input-largo" type="email" id="mail" name="mail" placeholder="Ej: mail@gmail.com" title="Formato del mail: nombre@dominio.com" required>
                         </p>                    
 
                         </fieldset>
@@ -316,9 +317,9 @@
                         <p><b>*: campo obligatorio.</b></p>
                     </footer>
                     <p id="accion">
-                        <button id="submit">Iniciar afiliación</button>
+                        <button type="submit" id="submit">Iniciar afiliación</button>
                         <button type="reset" id="reset">Restablecer</button>
-                        <!-- <button onclick="cambiarCss()">Cambiar CSS</button> -->
+                        <button id="cambioCss" onclick="cambiarCss()">Cambiar CSS</button>
                     </p>
                 </form>
             </section>

@@ -22,7 +22,7 @@ body{
     margin-top: 50px;
     margin-bottom: 20px;
     margin-left: 300px;
-    margin-right: 300px;
+    margin-right: 300px;    
 }
 h1{
     font-family: 'Poppins', sans-serif;
@@ -61,6 +61,12 @@ p{
 }
 label{
     padding: 5px;
+}
+input{
+    text-align: right;
+}
+textarea{
+    text-align: right;
 }
 .input-largo {
     width: 70%;
