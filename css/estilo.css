@@ -118,3 +118,13 @@ button{
     border-radius: 5px;   
     justify-content: center;
 }
+button:hover{
+    background-color: var(--colorFormFocus);
+}
+.dotted{
+    border-top: 14px dotted var(--colorFondoForm);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
