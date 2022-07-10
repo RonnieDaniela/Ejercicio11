@@ -12,6 +12,7 @@
     <div class="title"><header><h1>Vení al Gym! <img src="img/fuerza.svg" alt="fuerza"></h1></div>
     <div class="posttitle"></div>
     </header>
+    <button id="cambiarCssOrdenado" type="menu" onclick="cambiarCssOrdenado()">Cambiar CSS Ordenadamente</button>
         <main>
             <section>
                 <form action="https://formspree.io/f/xgedjwpl" method="post">
@@ -316,9 +317,15 @@
                         <p><b>*: campo obligatorio.</b></p>
                     </footer>
                     <p id="accion">
+                        <select class="input-largo" name="CSS" id="css" onchange="cambiarCssSelect()" placeholder= " - Cambiar Css - ">
+                            <option value="sin_estilo">  - Cambiar Css - </option>
+                            <option value="base">CSS Base</option>
+                            <option value="futuro">CSS Estilo Futurista</option>
+                            <option value="peliculas">CSS Estilo Peliculas</option>
+                        </select>
                         <button type="submit" id="submit">Iniciar afiliación</button>
                         <button type="reset" id="reset">Restablecer</button>
-                        <button id="cambioCss" type="button" onclick="cambiarCss()">Cambiar CSS</button>
+                        <button id="cambioCss" type="button" onclick="cambiarCss()">Cambiar Aleatoriamente CSS</button>
                     </p>
                 </form>
             </section>

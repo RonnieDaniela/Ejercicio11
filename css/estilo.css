@@ -128,3 +128,6 @@ button:hover{
     margin-left: 30%;
     margin-right: 30%;
 }
+#cambioCss{
+    background-image: url(../img/dado.svg);
+}

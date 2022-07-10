@@ -138,3 +138,6 @@ button{
     border-radius: 5px;   
     justify-content: center;
 }
+#cambioCss{
+    background-image: url(../img/dado.svg);
+}

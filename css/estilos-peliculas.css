@@ -143,3 +143,7 @@ div{
     from {background-color: rgb(0, 0, 0);}
     to {background-color: rgb(255, 1, 1);}
 }
+#cambioCss{
+    background-image: url(../img/dado.svg);
+    background-color: rgb(255, 1, 1);
+}
