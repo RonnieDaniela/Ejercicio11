@@ -1,0 +1,145 @@
+/*ESTILO PELICULAS*/
+@import url('https://fonts.googleapis.com/css2?family=Ruge+Boogie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;    
+}
+:root {
+    --colorFondoWeb: #17181b;
+    --colorRotulos: #45625b;
+    --colorTituloPrincipal: #e2e5e9;
+    --colorBordeTitulo: #3d5b50;
+    --colorFormFocus: #74a197;
+    --colorFondoForm:#b3c9c3;
+    --colorFormSelected:#9ebab2;
+    --colorBotones: #212e29;
+    --colorBordeBoton:#3d5b50;
+    --colorBordeText: #768982;
+}
+body{
+    background-image: url(../img/back-peli.jpg);
+    background-repeat: repeat;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+h1{
+    color: red;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 150px;
+    border-radius: 40%;
+    border: red double;
+    background-image: url(../img/title.svg);
+    font-family: 'Ruge Boogie', cursive;
+}
+button::after {
+    content: url(../img/cuchillo.svg);
+}
+
+fieldset{
+    padding: 20px;
+    margin-top: 10px;
+    background-image: url(../img/SL-121019-25870-28.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    color: black; 
+    border: white solid;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: 'Coming Soon', cursive;
+}
+legend{
+    color: white;
+    background-image: url(../img/f2.svg);
+    background-repeat: repeat;
+    text-align: left;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-family: 'Ruge Boogie', cursive;
+}
+p{
+    padding: 5px;
+    color: white;
+}
+label{
+    padding: 5px;
+    color: red;
+}
+.input-largo {
+    width: 70%;
+    height: 70px;
+    border: 1px solid var(--colorBordeText);
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Coming Soon', cursive;
+}
+input:focus {
+    background-color: white;
+    color: red;
+    font-size: 30px;
+    text-align: center;
+}
+.input-largo-area{
+    height: 300px;
+}
+textarea:focus {
+    background-color: white;
+    color: red;  
+}
+#datos{
+    text-align: center;
+}
+#contacto{
+    text-align: center;
+}
+form input::placeholder{
+    text-align: center;
+    font-size: 30px;
+}
+footer{
+    text-align: center;
+    margin: 30px;
+    color:var(--colorTituloPrincipal);
+    background-image: url(../img/SL-121019-25870-28.jpg);
+    background-size: 100%;
+    border: white solid;
+    border-radius: 10px;
+    font-family: 'Coming Soon', cursive;
+    font-size: 40px;
+}
+#accion{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+button{
+    background: rgb(18,2,2);
+    background: linear-gradient(90deg, rgba(18,2,2,1) 0%, rgba(195,8,8,0.8267682072829132) 12%, rgba(163,51,51,0.8575805322128851) 30%, rgba(179,47,47,0.8379726890756303) 60%, rgba(253,29,29,0.865983893557423) 79%, rgba(36,5,5,1) 100%);
+    padding: 25px;
+    margin: 25px;
+    font-size: 20px;
+    color: var(--colorTituloPrincipal);
+    border: 2px solid white;
+    border-radius: 5px;   
+    justify-content: center;
+}
+div{
+    animation: animacion1 1s infinite;
+    border: 5px groove white;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;   
+}
+@keyframes animacion1 {
+    from {background-color: rgb(0, 0, 0);}
+    to {background-color: rgb(255, 1, 1);}
+}

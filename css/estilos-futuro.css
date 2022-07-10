@@ -24,6 +24,7 @@
 body{
     background-image: url(../img/robot.png);
     background-repeat: no-repeat;
+    background-color: rgb(104, 125, 241);
     background-position: 125% 115px;
     margin-top: 50px;
     margin-bottom: 20px;
